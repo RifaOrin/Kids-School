@@ -15,12 +15,14 @@
   --white-color: #f7f7f7;
   --sky-blue: #01acfd;
   --orange: #fea301;
+  --dark-orange: #e69400;
   --black: #111111;
 }
 .flex {
   display: flex;
 }
 .primary-btn {
+  font-family: "Quicksand", sans-serif;
   padding: 10px 60px;
   background-color: var(--orange);
   color: #ffffff;
@@ -29,13 +31,26 @@
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.875rem;
+
+  /* === Effect Base Styles === */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.primary-btn:hover {
+  /* 1. Color Deepening */
+  background-color: var(--dark-orange); /* Changes to the darker shade */
+  font-weight: 700;
+  /* 2. Shadow & Lift Effect */
+  transform: translateY(-4px); /* Moves the button 4px up */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a larger, prominent shadow */
 }
 body {
   background-color: var(--white-color);
 }
 /* Navbar Styles */
 
-.navbar {
+.navbar,
+.banner {
   max-width: 1160px;
   margin: 0 auto;
 }
@@ -84,8 +99,49 @@ body {
 .fa-bars {
   display: none;
 }
+/* Banner Styles */
+.banner {
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-content {
+  width: 640px;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 3.8125rem;
+  margin-bottom: 24px;
+}
+.empower {
+  color: var(--orange);
+}
+.towards {
+  color: var(--sky-blue);
+}
+.banner-description {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+#enroll-btn {
+  background-color: var(--black);
+  font-weight: 700;
+}
+#enroll-btn:hover {
+  background-color: #181818;
+  font-weight: 800;
+}
+.banner-img {
+  width: 100%;
+}
+.custom-hr {
+  display: none;
+}
 @media screen and (max-width: 576px) {
-  .navbar {
+  .navbar,
+  .banner {
     max-width: 358px;
   }
   .nav-title {
@@ -103,5 +159,38 @@ body {
   }
   #contact-btn {
     display: none;
+  }
+  /* Banner responsive styles */
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-img-container {
+    margin: 20px 10px 20px 10px;
+  }
+  .custom-hr {
+    display: block;
+    color: var(--orange);
+    border-top: 0.5px solid;
+  }
+  .banner-content {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .banner-title {
+    text-align: center;
+    font-size: 2rem;
+    line-height: normal;
+  }
+  .banner-description {
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.77rem;
+  }
+  #enroll-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 24px;
+    font-size: 1rem;
   }
 }
