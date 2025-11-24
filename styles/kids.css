@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 .quicksand {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -170,6 +170,148 @@ body {
 }
 .custom-hr {
   display: none;
+}
+/* Main Section */
+main {
+  max-width: 1160px;
+  margin: 0 auto;
+  background-image: url("../assets/bg.png");
+  background-repeat: repeat;
+}
+main > section {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+/* Standard Curriculum Section */
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.875rem;
+  line-height: 3.59rem;
+  color: #000000;
+  margin-bottom: 80px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 28px;
+  margin-bottom: 80px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 52px 40px;
+  border-radius: 18.86px;
+}
+#card-1 {
+  box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05), 0 0 0 0.94px #def5ff;
+  background: linear-gradient(
+    to bottom,
+    rgba(222, 245, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  background-color: #ffffff;
+}
+#card-2 {
+  box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05), 0 0 0 0.94px #fff4dc;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 244, 220, 1) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  background-color: #ffffff;
+}
+#card-3 {
+  box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05), 0 0 0 0.94px #f2e8ff;
+  background: linear-gradient(
+    to bottom,
+    rgba(238, 225, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+  background-color: #ffffff;
+}
+.card-image {
+  width: 137px;
+  height: 137px;
+}
+.card-img {
+  width: 100%;
+}
+.card-title {
+  margin-top: 32px;
+  margin-bottom: 33px;
+  font-weight: 700;
+  font-size: 1.5325rem;
+  line-height: 1.91875rem;
+  color: #202020;
+}
+.card-description {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #808080;
+  font-size: 0.94rem;
+  line-height: 1.76875rem;
+  margin-bottom: 33px;
+}
+.read-btn {
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.94rem;
+  line-height: 1.76875rem;
+  font-family: "Quicksand", sans-serif;
+  padding-bottom: 4px;
+  position: relative;
+}
+.read-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: width 0.5s ease-in-out;
+}
+#btn-1 {
+  color: #64c8ff;
+}
+#btn-2 {
+  color: #f0aa00;
+}
+#btn-3 {
+  color: #8700ff;
+}
+#btn-1::after {
+  background-color: #64c8ff;
+}
+#btn-2::after {
+  background-color: #f0aa00;
+}
+#btn-3::after {
+  background-color: #8700ff;
+}
+.read-btn:hover::after {
+  width: 100%;
+}
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.arrow-left,
+.arrow-right {
+  padding: 19px 23px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--orange);
+}
+.fa-chevron-left,
+.fa-chevron-right {
+  color: #ffffff;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 576px) {
   .navbar,
