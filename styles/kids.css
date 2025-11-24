@@ -262,7 +262,7 @@ main > section {
   font-size: 0.94rem;
   line-height: 1.76875rem;
   font-family: "Quicksand", sans-serif;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
   position: relative;
 }
 .read-btn::after {
@@ -366,5 +366,31 @@ main > section {
     margin: 0 auto;
     padding: 6px 24px;
     font-size: 1rem;
+  }
+  main {
+    max-width: 357px;
+  }
+  .section-title {
+    font-size: 1.625rem;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 12px;
+  }
+  .card-title {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 22px;
+  }
+  .card-description {
+    font-size: 0.638rem;
+    line-height: 1.2rem;
+    margin-bottom: 22px;
+  }
+  .read-btn {
+    font-size: 0.638rem;
+    line-height: 1.2rem;
   }
 }
