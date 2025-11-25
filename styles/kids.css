@@ -652,3 +652,55 @@ Footer {
     line-height: 1.375rem;
   }
 }
+@media screen and (min-width: 577px) and (max-width: 997px) {
+  .navbar,
+  .banner {
+    max-width: 697px;
+  }
+  .nav-title {
+    display: none;
+  }
+  .nav-item {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 1.875rem;
+  }
+  .logo {
+    width: 46px;
+    height: 46px;
+  }
+  #contact-btn {
+    display: none;
+  }
+  .custom-hr {
+    display: block;
+    color: var(--orange);
+    border-top: 0.5px solid;
+    margin-bottom: 20px;
+  }
+  /* Banner responsive style */
+  .banner {
+    gap: 30px;
+  }
+  .banner-title {
+    font-size: 2.4rem;
+    line-height: 2.3rem;
+  }
+  .banner-description {
+    font-weight: 500;
+    font-size: 0.77rem;
+  }
+  #enroll-btn,
+  #view-btn {
+    padding: 6px 24px;
+    font-size: 1rem;
+  }
+  .main {
+    max-width: 697px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
