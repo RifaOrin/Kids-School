@@ -554,11 +554,11 @@ Footer {
     padding: 6px 24px;
     font-size: 1rem;
   }
-  main {
+  .main {
     max-width: 357px;
   }
-  main > section {
-    margin-bottom: 60px;
+  main section {
+    padding-bottom: 60px;
   }
   .section-title {
     font-size: 1.625rem;
@@ -587,6 +587,9 @@ Footer {
   }
   .arrow-btn {
     display: none;
+  }
+  .our-story {
+    max-width: 357px;
   }
   .story-1 {
     display: none;
