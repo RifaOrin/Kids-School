@@ -184,13 +184,15 @@ body {
 }
 /* Main Section */
 main {
-  max-width: 1160px;
-  margin: 0 auto;
   background-image: url("../assets/bg.png");
   background-repeat: repeat;
 }
-main > section {
-  margin-bottom: 120px;
+.main {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+main section {
+  padding-bottom: 120px;
 }
 /* Standard Curriculum Section */
 
@@ -323,6 +325,17 @@ main > section {
   font-size: 1.5rem;
 }
 /* Our stories section */
+.our-stories-section {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(254, 163, 1, 0.3) 100%
+  );
+}
+.our-story {
+  max-width: 1160px;
+  margin: 0 auto;
+}
 #story-title {
   font-size: 1.5rem;
   line-height: 2.39375rem;
