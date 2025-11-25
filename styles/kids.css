@@ -602,4 +602,31 @@ Footer {
   #story3-tag {
     bottom: 70px;
   }
+  .footer {
+    max-width: 357px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .logo-content {
+    width: 357px;
+  }
+  .logo-title {
+    font-size: 2.23rem;
+  }
+  .logo-description {
+    font-size: 1rem;
+    padding-right: 16px;
+  }
+  .items {
+    gap: 17px;
+  }
+  .about-title {
+    font-size: 1.27rem;
+    margin-bottom: 28px;
+  }
+  .keep-title {
+    font-size: 1.377rem;
+    line-height: 1.375rem;
+  }
 }
