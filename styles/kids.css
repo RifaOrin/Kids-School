@@ -47,6 +47,14 @@
 body {
   background-color: var(--white-color);
 }
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.875rem;
+  line-height: 3.59rem;
+  color: #000000;
+  margin-bottom: 80px;
+}
 /* Navbar Styles */
 
 .navbar,
@@ -135,6 +143,7 @@ body {
 .banner {
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 .banner-content {
   width: 640px;
@@ -157,11 +166,13 @@ body {
   color: var(--black);
   margin-bottom: 24px;
 }
-#enroll-btn {
+#enroll-btn,
+#view-btn {
   background-color: var(--black);
   font-weight: 700;
 }
-#enroll-btn:hover {
+#enroll-btn:hover,
+#view-btn:hover {
   background-color: #181818;
   font-weight: 800;
 }
@@ -179,18 +190,10 @@ main {
   background-repeat: repeat;
 }
 main > section {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin-bottom: 120px;
 }
 /* Standard Curriculum Section */
-.section-title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 2.875rem;
-  line-height: 3.59rem;
-  color: #000000;
-  margin-bottom: 80px;
-}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -313,6 +316,95 @@ main > section {
   color: #ffffff;
   font-size: 1.5rem;
 }
+/* Our stories section */
+#story-title {
+  font-size: 1.5rem;
+  line-height: 2.39375rem;
+  margin: 58px 38px 0px 38px;
+}
+.story-tag {
+  display: inline-block;
+  position: absolute;
+  left: 38px;
+  bottom: 137px;
+  padding: 10px 20px;
+  background-color: #3cd8e8;
+  color: #ffffff;
+  font-size: 0.95875rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  border-radius: 48px;
+}
+#story1-tag {
+  bottom: 287px;
+}
+#story2-tag,
+#story3-tag {
+  bottom: 110px;
+}
+#story2-tag,
+#story4-tag,
+#story5-tag {
+  background-color: #95b226;
+}
+#story3-tag {
+  background-color: #5d58f0;
+}
+.story-title {
+  font-size: 0.95rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 39px 54px 33px 38px;
+}
+.story-description {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.958rem;
+  line-height: 1.8rem;
+  color: #666666;
+  margin: 47px 68px 24px 38px;
+  font-weight: 500;
+}
+.story-1 {
+  grid-area: story-1;
+}
+.story-2 {
+  grid-area: story-2;
+}
+.story-3 {
+  grid-area: story-3;
+}
+.story-4 {
+  grid-area: story-4;
+}
+.story-5 {
+  grid-area: story-5;
+}
+.stories {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "story-1 story-2 story-3"
+    "story-1 story-4 story-5";
+  gap: 19px;
+  margin-bottom: 88px;
+}
+.story {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+.story-img {
+  width: 100%;
+}
+#view-btn {
+  display: block;
+  margin: 0 auto;
+}
 @media screen and (max-width: 576px) {
   .navbar,
   .banner {
@@ -366,7 +458,8 @@ main > section {
     font-weight: 500;
     font-size: 0.77rem;
   }
-  #enroll-btn {
+  #enroll-btn,
+  #view-btn {
     display: block;
     margin: 0 auto;
     padding: 6px 24px;
@@ -374,6 +467,9 @@ main > section {
   }
   main {
     max-width: 357px;
+  }
+  main > section {
+    margin-bottom: 60px;
   }
   .section-title {
     font-size: 1.625rem;
@@ -403,4 +499,43 @@ main > section {
   .arrow-btn {
     display: none;
   }
+  .story-1 {
+    display: none;
+  }
+  .stories {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: unset;
+    margin-bottom: 20px;
+  }
+  .story-1,
+  .story-2,
+  .story-3,
+  .story-4,
+  .story-5 {
+    /* Unset is important so they flow naturally in the 2-column grid */
+    grid-area: unset;
+  }
+  .story-title {
+    font-size: 0.57rem;
+    line-height: 1.06rem;
+    margin: 26px 23px 20px 23px;
+  }
+  .story-tag {
+    font-size: 0.57rem;
+    line-height: 1.068rem;
+    padding: 6px 11px;
+    bottom: 73px;
+    left: 22px;
+  }
+  #story2-tag,
+  #story3-tag {
+    bottom: 70px;
+  }
+  /*#story1-tag {
+    bottom: 328px;
+  }
+  .story-description {
+    display: none;
+  } */
 }
