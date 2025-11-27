@@ -1,4 +1,4 @@
-# Restaurant App
+# Kids School Website
 
 ## Table of Contents
 - [Overview](#overview)
