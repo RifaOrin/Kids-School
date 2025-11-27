@@ -23,8 +23,4 @@ To get this project up and running locally:
        cd Kids-School
    ```
 
-3. **Start the development server:***
-   ```bash
-     npm run dev
-   ```
-4. Open http://localhost:5173 in your browser to view the app.
+2. Open http://127.0.0.1:5500/index.html in your browser to view the app.
