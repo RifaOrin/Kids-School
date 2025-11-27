@@ -318,6 +318,12 @@ main section {
   border-radius: 50%;
   border: none;
   background-color: var(--orange);
+  transition: all 0.3s ease-in-out;
+}
+.arrow-left:hover,
+.arrow-right:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 .fa-chevron-left,
 .fa-chevron-right {
@@ -702,5 +708,16 @@ Footer {
   }
   .section-title {
     font-size: 2rem;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card:nth-child(3) {
+    display: none;
+  }
+  /* Our Stories Section */
+  .our-story {
+    max-width: 697px;
+    margin: 0 auto;
   }
 }
