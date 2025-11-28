@@ -154,8 +154,60 @@ body {
   line-height: 3.8125rem;
   margin-bottom: 24px;
 }
+.empower,
+.line-1,
+.line-2 {
+  display: inline-block;
+  opacity: 0;
+}
 .empower {
   color: var(--orange);
+  animation: dropBounce 1.2s ease-out forwards; /* forwards meaning animation jekhane sesh hoise okhnei thambe */
+}
+.line-1 {
+  animation: fadeUp 1s ease-out 0.9s forwards;
+}
+.line-2 {
+  animation: fadeSlide 1.2s ease-out 1.6s forwards;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes dropBounce {
+  0% {
+    transform: translateY(-120px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(20px);
+  }
+  65% {
+    transform: translateY(-10px);
+  }
+  82% {
+    transform: translateY(6px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .towards {
   color: var(--sky-blue);
