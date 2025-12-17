@@ -11,6 +11,9 @@ A modern and responsive Kids Education School website where parents can explore 
 ## 🔗 Live Preview Link
 [Live Preview Link](https://rifaorin.github.io/Kids-School/)
 
+## 📸 Preview
+![Biker Zone Screenshot](./screenshot.png)
+
 ## 🚀 Technologies Used
 - **HTML** 
 - **CSS** 
