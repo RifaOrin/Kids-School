@@ -3,6 +3,7 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Live Preview Link](#live-preview-link)
+- [Preview](#preview)
 - [Technologies Used](#technologies-used)
 - [Project Setup](#project-setup)
 
